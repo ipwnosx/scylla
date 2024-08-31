@@ -1,13 +1,16 @@
-![banner_scylla](https://user-images.githubusercontent.com/2396817/40580477-f15a15b8-6136-11e8-9f4b-1f012e90712c.png) [![Build Status](https://travis-ci.org/imWildCat/scylla.svg?branch=master)](https://travis-ci.org/imWildCat/scylla)
+![banner_scylla](https://github.com/imWildCat/scylla/assets/2396817/62498a29-8105-4281-8eb0-73436d4ed5b0) [![Build Status](https://travis-ci.org/imWildCat/scylla.svg?branch=master)](https://travis-ci.org/imWildCat/scylla)
 [![codecov](https://codecov.io/gh/imWildCat/scylla/branch/master/graph/badge.svg)](https://codecov.io/gh/imWildCat/scylla)
 [![Documentation Status](https://readthedocs.org/projects/scylla-py/badge/?version=latest)](https://scylla.wildcat.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/scylla.svg)](https://badge.fury.io/py/scylla)
-[![Docker Build Status](https://img.shields.io/docker/build/wildcat/scylla.svg)](https://hub.docker.com/r/wildcat/scylla/)
+[![Docker Pull](https://img.shields.io/docker/pulls/wildcat/scylla.svg)](https://hub.docker.com/r/wildcat/scylla/)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5DXFA7WGWPZBN)
-===
 
-An intelligent proxy pool for humanities, only supports Python 3.8+. Key
-features:
+
+# Scylla
+
+An intelligent proxy pool for humanities, to extract content from the internet and build your own Large Language Models in this new AI era.
+
+Key features:
 
 - Automatic proxy ip crawling and validation
 - Easy-to-use JSON API
@@ -19,7 +22,6 @@ features:
     minimally
 - Headless browser crawling
 
-对于偏好中文的用户，请阅读 [中文文档](https://scylla.wildcat.io/zh/latest/)。For those who prefer to use Chinese, please read the [Chinese Documentation](https://scylla.wildcat.io/zh/latest/).
 
 Get started
 ===========
@@ -49,20 +51,14 @@ cd scylla
 
 pip install -r requirements.txt
 
-yarn install
+cd frontend
+npm install
+cd ..
+
 make assets-build
 
 python -m scylla
 ```
-
-##### For Windows user who fails at installing `sanic` due to `uvloop does not support Windows at the moment`:
-
-```bash
-export SANIC_NO_UVLOOP=true
-export SANIC_NO_UJSON=true
-pip3 install sanic
-```
-If this also fails, yoi will need to manual install sanic from source.
 
 Usage
 -----
@@ -223,7 +219,7 @@ cd scylla
 
 pip install -r requirements.txt
 
-npm install # or `yarn install`
+npm install
 make assets-build
 ```
 
@@ -264,15 +260,18 @@ to develop new features continuously! 🎉 Thank you!
 
 The ways for donation are shown below:
 
+GitHub Sponsor
+------
+
+I super appreciate if you can join my sponsors here.
+
+<https://github.com/sponsors/imWildCat>
+
 PayPal
 ------
 
 [![paypal_donation](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5DXFA7WGWPZBN)
 
-Alipay or WeChat Pay
---------------------
-
-[![Alipay And WeChat Donation]][Alipay and WeChat Donation]
 
 License
 =======

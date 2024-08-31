@@ -243,8 +243,9 @@ API 文档
    cd scylla
 
    pip install -r requirements.txt
+   python -m playwright install --with-deps chromium
 
-   npm install # 或 `yarn install`
+   npm install
    make build-assets
 
 测试
